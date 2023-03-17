@@ -1,3 +1,3 @@
 # Romit-Array
 
-#Helping a bro with his Uni Assignments
+Helping a bro with his Uni Assignments
