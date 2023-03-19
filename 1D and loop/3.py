@@ -1,6 +1,2 @@
 x = input("Enter a number: ")
-reversed = int(x[::-1])
-if reversed == int(x):
-    print("Palindrome")
-else:
-    print("Not a palindrome")
+print("Palindrome") if int(x[::-1]) == int(x) else print("Not a palindrome")

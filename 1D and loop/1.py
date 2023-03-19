@@ -1,12 +1,3 @@
 x = int(input("Enter a number: "))
-i = 1
-sum = 0
-while i <= x:    
-    if x % i == 0:
-        sum += i
-    i += 1
-
-if sum / 2 == x:
-    print("Perfect")
-elif sum/2 != x:
-    print("Imperfect")
+summation = sum(i for i in range(1, x+1) if x % i == 0)
+print('Perfect') if summation/2 == x  else print('Imperfect')

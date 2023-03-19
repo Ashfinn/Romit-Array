@@ -1,10 +1,4 @@
 x = input("Enter a number: ")
-sum = 0;
-for i in range(len(x)):
-    sum += int(x[i])
-reversed_str = str(sum)
-reversed = int(reversed_str[::-1])
-if reversed * int(reversed_str) == int(x):
-    print ("Harshad")
-else:
-    print ("Not Harshad")
+summation = str(sum(int(i) for i in x))
+reversed = int(summation[::-1])
+print ("Harshad") if reversed * int(summation) == int(x) else print ("Not Harshad")
